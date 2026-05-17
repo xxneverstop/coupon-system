@@ -34,7 +34,6 @@ application-local.properties
 
 # IDEs and editors
 .idea/
-!.idea/.gitignore
 *.iws
 *.iml
 *.ipr
