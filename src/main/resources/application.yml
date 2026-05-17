@@ -1,0 +1,30 @@
+server:
+  port: 19022
+
+spring:
+  application:
+    name: flash-coupon
+  datasource:
+    url: jdbc:mysql://localhost:3306/coupon_db_test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: Xrw2001724..
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 30
+  sql:
+    init:
+      mode: never
+      schema-locations: classpath:schema.sql
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+logging:
+  level:
+    com.honortech.coupon: info
+    com.baomidou.mybatisplus: info

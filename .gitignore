@@ -1,0 +1,63 @@
+# Maven / Java
+target/
+target-javac-main/
+target-javac-test/
+*.class
+*.jar
+*.war
+*.ear
+
+# Keep source/resource directories that may legitimately be named target/build
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Maven wrapper
+!.mvn/wrapper/maven-wrapper.jar
+
+# Logs and runtime files
+*.log
+*.out
+*.err
+hs_err_pid*
+replay_pid*
+cp.txt
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.yaml
+application-local.properties
+
+# IDEs and editors
+.idea/
+!.idea/.gitignore
+*.iws
+*.iml
+*.ipr
+.vscode/
+out/
+
+# Eclipse / STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
